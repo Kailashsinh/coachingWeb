@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Keep only one metadata export
+// ✅ Make sure this is the ONLY metadata export
 export const metadata: Metadata = {
   title: "Cohort - Best Coaching for Students",
   description: "Learn from the best teachers. Class 9 to 12 tutorials, blogs, and notes.",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
       <body
@@ -37,3 +37,4 @@ export default function RootLayout({
     </html>
   );
 }
+
