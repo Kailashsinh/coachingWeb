@@ -36,3 +36,7 @@ export default function RootLayout({
     </html>
   );
 }
+export const metadata = {
+  title: "Cohort - Best Coaching for Students",
+  description: "Learn from the best teachers. Class 9 to 12 tutorials, blogs, and notes.",
+};
