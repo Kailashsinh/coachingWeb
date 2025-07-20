@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-
+import Link from "next/link";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -40,12 +40,11 @@ export default function Navbar() {
           <a href="#tutorial">Tutorials</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
-          <a
-            href="#enroll"
-            className="bg-[#6b3fa0] text-white px-4 py-2 rounded-full text-center"
-          >
-            Enroll Now
-          </a>
+         <Link href="/enroll">
+  <button className="px-4 py-2 bg-[#6b3fa0] text-white rounded-full hover:bg-[#5b3290] transition duration-300 cursor-pointer">
+    Enroll Now
+  </button>
+</Link>
         </div>
       )}
     </nav>
